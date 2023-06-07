@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #404040;
+}
+
+header {
+  padding: 1rem 0;
+  background-color: #eaedf1;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 1.5rem auto;
+  width: 70%;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: .5rem;
+  background-color: #eaedf1;
+  box-shadow: 0 8px 24px -16px rgba(0, 0, 0, 0.5);
+}
+
+#form-section {
+  height: fit-content;
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-section label {
+  margin-top: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+#form-section input {
+  font-size: 1rem;
+  padding: .5rem;
+  border: 0;
+  border-radius: .25rem;
+}
+
+#form-section button {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 70%;
+  margin: 1.75rem auto 0 auto;
+  padding: .5rem 0;
+  border: 0;
+  border-radius: .25rem;
+  background-color: #f65843;
+  transition: .2s;
+}
+
+#form-section button.edit {
+  background-color: #00c7c7;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+#display-section {
+  height: fit-content;
+}
+
+#display-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: .75rem 0 .2rem 0;
+}
+
+#display-section #balance {
+  text-align: center;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #000;
+}
+
+.Tdiv {
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border-radius: .5rem;
+  background-color: #585858;
+  color: #fff;
+}
+
+.Tdiv.out {
+  border: 2px solid #f65843;
+}
+
+.Tdiv.in {
+  border: 2px solid #5bf768;
+}
+
+.Tname {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.TdivLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tvalue {
+  font-weight: 700;
+  text-align: center;
+}
+
+.Tvalue.in {
+  color: #5bf768;
+}
+
+.Tvalue.out {
+  color: #f65843;
+}
+
+.Tbuttons button {
+  font-weight: 700;
+  padding: .1rem .3rem;
+  border: 0;
+  border-radius: .4rem;
+  background-color: #ddd;
+  transition: .2s;
+}
+
+.Tbuttons .TbuttonDel {
+  margin-right: .3rem;
+}

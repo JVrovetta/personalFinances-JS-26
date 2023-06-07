@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="João Vitor Rovetta Junqueira">
+  <title>Finanças Pessoais</title>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Finanças Pessoais</h1>
+  </header>
+  <main>
+    <section id="form-section">
+      <form id="form">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Nome da transação..." autocomplete="off">
+        <label for="value">Valor: </label>
+        <input type="number" id="value" name="value" placeholder="R$ 0,00">
+        <button type="submit" id="submit">Enviar</button>
+        <input type="hidden" id="id">
+      </form>
+    </section>
+    <section id="display-section">
+      <h2>Transações</h2>
+      <div id="balance">R$0.00</div>
+      <div id="transactions"></div>
+    </section>
+  </main>
+
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Personal Script -->
+  <script type="module" src="./src/js/index.js"></script>
+</body>
+
+</html>
